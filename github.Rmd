@@ -1,0 +1,880 @@
+---
+title: "GitHub"
+author: "David Asare Kumi"
+date: "11/13/2019"
+output: html_document
+---
+
+
+## How to use GitHub
+
+1. Create and use a repository.
+
+2. Start and manage a new branch.
+
+3. Make changes to a file and push them to github as commits.
+
+4. Open and merge a pull request.
+
+## What is GitHub
+
+- GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+- GitHub essentials:
+
+1. Repositories.
+
+2. Branches.
+
+3. Commits.
+
+4. Pull Requests.
+
+- Git is an open-source version control system that was started by Linus Trovalds who created Linux.
+
+## Create a Repository
+
+- A repository is usually used to organize a single project.
+
+- Repositories can contain;
+
+1. Folders and files.
+
+2. Images.
+
+3. Videos.
+
+4. Spreadsheets and 
+
+5. Datasets.
+
+6. Anything your project needs.
+
+- We recommend including a README, or a file with information about your project.
+
+- It also offers other common options such as a license file.
+
+## To Create a new Repository
+
+1. In the upper right corner, next to your avatar or identicon, click + and then select New Repository.
+
+2. Name your repository hello-world.
+
+3. Write a short description.
+
+4. Select initialize this repository with a readme.
+
+5. Select public if you don't have a private (not accessible to everybody) account.
+
+6. Click create repository.
+
+## Create a Branch
+
+- Branching is a way to work on different versions of a repository at one time.
+
+- The default repository has one branch named master which is considered to be the definitive branch.
+
+- We use branches to experiment and make edits before committing them to master.
+
+- When you create a branch off the master branch, you are making a copy or snapshot of master as it was at that point in time.
+
+- If someone else made changes to the master branch while you were working on your branch, you could pull in those updates.
+
+- This diagram shows:
+
+1. The master branch.
+
+2. A new branch called feature (because we are doing feature work on this branch).
+
+3. The journey that feature takes before it is merged into master;
+
+- create feature branch from master.
+
+- commit changes.
+
+- submit pull request.
+
+- Discuss proposed changes.
+
+- Merge feature branch into master.
+
+- Branches saves different versions of a file.
+
+## To Create a New Branch
+
+1. Go to your new repository hello-world.
+
+2. Click the drop down at the top of the file list that says branch: master.
+
+3. Type a branch name, readme-edits, into the new branch text box.
+
+4. Select the blue create branch box or hit "Enter" on your keyboard.
+
+- Now you have two branches, master and readme-edits.
+
+- They look exactly the same, but not for long!
+
+- Next we will add our changes to the new branch.
+
+## Make and Commit Changes
+
+- Now you are on the code view for your readme-edits branch, which is a copy of master. Let's make some edits.
+
+- On github saved changes are called commits.
+
+- Commit messages capture the history of your changes, so other contributors can understand what you have done and why.
+
+- Make and Commit changes.
+
+1. Click the README.md file.
+
+2. Click the pencil icon in the upper right corner of the file view to edit.
+
+3. In the editor write a bit about your self.
+
+4. Write a commit message that describes your changes.
+
+5. Click commit changes button. These changes will be made to just the README file on your readme-edits branch, so now this branch contains content that's different from master.
+
+## Open a Pull Request
+
+- Pull request are the heart of collaboration on Github.
+
+- When you open a pull request, you are proposing your changes and requesting that someone review and pull in your contributions and merge them into their branch.
+
+- Pull requests show differences, of the content from both branches. The changes, additions and subtractions are shown in green and red.
+
+- As soon as you make a commit, you can open a pull request and start a discussion.
+
+- By using Github's @ mention system in your pull request message, you can ask for feed back from specific people or teams, whether they are down the hall or 10 time zones away.
+
+- You can even open pull request in your own repository and merge them yourself.
+
+## Open a Pull Request for changes to the README
+
+- Click the pull request tab, then from the pull request page, click the green New pull request button.
+
+- In the Example comparisons box, select the branch you made readme-edits, to compare with master (the original).
+
+- Look over your changes in the differences on the compare page, make sure they are what you want to submit.
+
+- When you satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
+
+- Give your pull request a title and write a brief description of your changes.
+
+- When you are done with your message, click Create Pull Request!
+
+## Merge your Pull Request
+
+- Here you merge your readme-edits branch into master branch.
+
+1. Click the green Merge pull request button to merge the changes into master.
+
+2. Click confirm merge.
+
+3. Go ahead and delete the branch, since its changes have been incorporated, with the Delete branch button in the purple box.
+
+## Finding files on github
+
+1. On github, navigate to the main page of the repository.
+
+2. Under your repository name, click find file.
+
+3. In the search field, type the name of the file you want to find.
+
+4. In the list of results, click the file you wanted to find.
+
+## Fork a repo (Clone a repo)
+
+- A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+- Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+## Fork an example repository
+
+- Forking a repository is a simple two step process. We have created a repository for you to practice with!
+
+1. On Github, navigate to the octocat/Spoon-Knife repository.
+
+2. In the top-right corner of the page, click Fork.
+
+## Keep your Fork Synced
+
+- You fork a project in order to propose changes to the upstream, or original repository.
+
+- Use git on the command line to do this.
+
+- You can practice setting the upstream repository using the same octocat/Spoon-Knife repository you just forked!
+
+- Step 1: Set up Git. First set up Git. Don't forget to set up authentication to Github from Git as well.
+
+- Step 2: Create a local clone of your fork. Let's create a clone of your fork locally on your computer.
+
+1. On Github, navigate to your fork of the Spoon-Knife repository.
+
+2. Under the repository name, click clone or download.
+
+3. In the clone with HTTPS section, click to copy the clone URL for the repository.
+
+4. Open Git Bash.
+
+5. Type git clone, and then paste the URL you copied. It will look like this, with your GitHub username instead of your-username. $ git clone https://github.com/YOUR-USERNAME/Spoon-Knife.
+
+6. Press Enter. Your local clone will be created.
+
+- Step 3: Configure Git to sync your fork with the original Spoon-Knife repository.
+
+1. On GitHub, navigate to the octocat/Spoon-Knife repository.
+
+2. Under the repository name, click clone or download.
+
+3. In the clone with HTTPS section, click to copy the  clone URL for the repository.
+
+4. Open Git Bash.
+
+5. Change directories to the location of the fork you cloned in step2: Create a local clone for your fork.
+
+- To go to your home directory, type just cd with no other text.
+
+- To list the files and folders in your current directory, type ls.
+
+- To go into one of your listed directories, type cd your_listed_directory.
+
+- To go up one directory, type cd..
+
+6. Type git remote -v and press Enter. You will see the current configured remote repository for your fork $ git remote -v origin https://github.com/YOUR_USERNAME/YOUR_FORK.git(fetch).
+
+- Origin https://github.com/YOUR_USERNAME/YOUR_FORK.git(push).
+
+7. Type git remote add upstream, and then paste the URL you copied in step 2 and press Enter. It will look like this: $ git remote add upstream https://github.com/octocat/Spoon-Knife.git.
+
+8. To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream. $ git remote -v.
+
+- origin https://github.com/YOUR_USERNAME/YOUR_FORK.git(fetch)
+
+- origin https://github.com/YOUR_USERNAME/YOUR_FORK.git(push)
+
+- upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git(fetch).
+
+- upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git(push).
+
+## Syncing a Fork
+
+1. Open Git Bash.
+
+2. Change the current working directory to your local project.
+
+3. Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. $ git fetch upstream.
+
+4. Check out your fork's local master branch. $ git checkout master switched to branch "master".
+
+5. Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+
+- $ git merge upstream/master
+
+- If your local branch did not have any unique commits, Git will instead perform a "fast-forward" $ git merge upstream/master
+
+## Set up Git
+
+- Git is a version control system (VCS). Git is responsible for everything GitHub related that happens locally on your computer.
+
+- To use Git on the command line, you will need to download, install, and configure Git on your computer.
+
+- If you want to work with Git locally, but don't want to use the command line, you can instead download and install the GitHub Desktop client.
+
+## Setting up Git
+
+1. Download and install the latest version of Git.
+
+2. Set your username in Git.
+
+- Open Git Bash.
+
+- Set a Git username $ git config --global user.name "Mona Lisa".
+
+3. Confirm that you have set the Git username correctly $ git config --global user.name; Mona Lisa.
+
+## Setting your Git username for a single repository
+
+1. Open Git Bash.
+
+2. Change the current working directory to the local repository where you want to configure the name that is associated with your Git branch.
+
+3. Set a Git user.name; $ git config user.name "Mona Lisa".
+
+4. Confirm that you have set the Git username correctly; $ git config user.name: Mona Lisa.
+
+## How to Send a document to github
+
+1. On github navigate to the main page of the repository.
+
+2. Under your repository name, click upload files.
+
+3. Drag and drop the file or folder you would like to upload to your repository onto the file tree.
+
+4. At the bottom of the page, type a short, meaningful commit message that describe the change you made to the file.
+
+## How do I upload a file to Github
+
+1. Create a new repository on Github.
+
+2. Open Terminal Terminal Git Bash.
+
+3. Change the current working directory to your local project.
+
+4. Initialize the local directory as a Git repository.
+
+5. Add the files in your new local repository.
+
+6. Commit the files that you have staged in your local repository.
+
+## How do I add code to Github repository
+
+- If you want to use the Github GUI, you can follow these steps.
+
+1. Click the "+" button and choose "Add Local Repository".
+
+2. Navigate to the directory with your existing code and click the "Add" button.
+
+3. You should now be prompted to "Create a new local Git repository here" so click the "yes" button.
+
+## How do I upload a folder to Github
+
+- If you drag multiple git folders into Github Desktop at the same time, each folder will be added as a separate Git repository.
+
+1. In the file menu, click add local repository.
+
+2. Click choose ... and using the finder window, navigate to the local repository you want to add.
+
+3. Click add Repository.
+
+## How to Create a gitignore file
+
+1. Create the text file gitignore.txt.
+
+2. Open it in a text editor and add your rules, then save and close.
+
+3. Hold shift, right click the folder you are in, then select open command window here.
+
+4. Then rename the file in the command line, with ren gitignore.txt.gitignore.
+
+## Adding a repository from your local computer to Github desktop
+
+1. In the file menu, click Add local repository.
+
+2. Click choose ... and using windows Explorer, navigate to the local repository you want to add.
+
+3. Click add repository.
+
+4. Publish repository to github.
+
+## How do I upload files to github?
+
+1. On github, navigate to the main page of the repository.
+
+2. Under your repository name, click upload files.
+
+3. Drag and drop the file or folder you would like to upload to your repository onto the file tree.
+
+4. At the bottom of the page, type a short meaningful commit message that describes the change you made to the file. Click on commit if file is uploaded.
+
+## How to Create a Pull Request
+
+1. From the open repository, click + in the global sidebar and then select "Create a pull request" under get to work.
+
+2. Fill out the rest of the pull request form ...
+
+3. Click create pull request.
+
+4. Check difference and commits.
+
+## How to Commit changes to Github
+
+1. Install and configure Git locally.
+
+2. Create your own local clone of a repository.
+
+3. Create a new git branch.
+
+4. Edit a file and stage your changes.
+
+5. Commit your changes. 
+
+6. Push your changes to Github.
+
+7. Make a pull request.
+
+8. Merge upstream changes into your fork.
+
+## How to Clone a repository from github
+
+- After you have created a repository on the remote, the next step is to clone it to your local environment.
+
+1. Navigate to your repository's code bab.
+
+2. Click clone or download.
+
+3. Copy the URL provided.
+
+4. Open your command line or Terminal application and enter the directory where you would like to copy the repository.
+
+## How to access Terminal on Windows
+
+1. Click start.
+
+2. Type cmd.
+
+3. Right click cmd.
+
+4. Select "Run as Administrator" and click yes to open command prompt with elevated previleges.
+
+## How to fork a repository
+
+1. Make sure you are logged into Github with your account.
+
+2. Find the Github repository with which you would like to work.
+
+3. Click the fork button on the upper right hand side of the repository's page.
+
+## How to unfork a Github repository
+
+- Log into your Github account.
+
+1. Click to your repository.
+
+2. Then in the main toolbar of Github click settings.
+
+3. Scroll to the bottom of the page and you will find delete this repository button.
+
+## How to Create a branch in GitHub
+
+1. On github navigate to the main page of the repository.
+
+2. Click the branch selector menu.
+
+3. Type a unique name for your new branch.
+
+4. Press Enter.
+
+## Deleting a branch
+
+1. On github, navigate to the main page of the repository.
+
+2. Above the list of files, click Number branches.
+
+3. Scroll to the branch that you want to delete then click delete i.e. the bin icon.
+
+## How do I push a local branch to remote?
+
+- Push a new local branch to a remote git repository and track it too.
+
+1. Create a new branch: git checkout -b feature_branch_name
+
+2. Edit, add and commit your files.
+
+3. Push your branch to the remote repository: git push -u origin feature_branch_name
+
+## How do I grant access to my github repository
+
+1. Ask for the username of the person you are inviting as a collaborator.
+
+2. Under your repository name, click settings.
+
+3. In the left sidebar, click collaborators.
+
+4. Under collaborators, start typing the collaborators username.
+
+5. Select the collaborators username from the drop-down menu.
+
+6. Click add collaborator.
+
+## How to remove a repository from github
+
+- Log into your github account.
+
+1. Click to your repository for (e.g. your username/your repository).
+
+2. Then in the main toolbar of github, click on settings.
+
+3. Scroll to the bottom of the page and you will find Delete the repository button.
+
+## Downloading and Installing GitHub Desktop
+
+1. Visit the GitHub Desktop download page.
+
+2. Choose download for windows.
+
+3. In your computer's downloads folder, double click GitHub Desktop.
+
+4. In the popup window, click install.
+
+5. After the program has been installed, click Run.
+
+## How to Create a textfile Hello World.md and push to GitHub repo called datascience coursera
+
+- We will look at two approaches.
+
+- Appraoch 1
+
+1. Open your github.
+
+2. On github, create a repo called datasciencecoursera. Click the drop down by the + sign and choose new repository; Owner Da1As2Ku3/ Repository name datasciencecoursera1.
+
+3. Check the public textbox.
+
+- Initialize this repository with a README
+
+- Click Create Repository
+
+4. On github click create new file.
+
+5. datasciencecoursera1/HelloWorld.md
+
+- Edit new file preview. Type This is a markdown file in this box.
+
+- Commit new file; Type nothing in the first box. Type Added HelloWorld.md in the second box. Type Commit directly to the master branch beneath the HelloWorld.md box.
+
+6. Click commit new file.
+
+- Approach 2
+
+- How to create a textfile Hello World.md(This is a markdown file).
+
+- Command line.
+
+1. Set up a github account.
+
+2. Create a repository called datasciencecoursera.
+
+3. Git clone. Copy the URL. 
+
+4. Go to command line.
+
+- Open up the terminal(Git Bash).
+
+- Type cd Desktop (want to have local copy on desktop).
+
+- git clone https: i.e. the URL you copied.
+
+5. Type cd datasciencecoursera(i.e. whatever you cloned).
+
+- Go to Rstudio.
+
+- File > New File > Text file.
+
+- Type This is a markdown file.
+
+- Save the file in desktop.
+
+- Save as Hello World.md
+
+- git add HelloWorld.md file
+
+- git commit -m "HelloWorld.md file"
+
+- git push -u origin master
+
+## Adding an existing project to GitHub using the command line
+
+1. Open Git Bash.
+
+2. Change the current working directory to your local project; cd Desktop ; cd Kumi-datacleaning-project.
+
+3. Initialize the local directory as a git repository; $ git init.
+
+4. Add the files in your new local repository. This stages them for the first commit; $ git add.
+
+5. Commit the files that you have staged in your local repository; $ git commit -m "First commit". To remove this commit and modify the file, use "git reset -- soft HEAD~1" and commit and add the file again.
+
+6. At the top of your GitHub repository's Quick setup page, click the copy icon to copy the remote repository URL.
+
+7. In the command prompt add the url for the remote repository where your local repository will be pushed; $ git remote add origin remote repository URL; $ git remote -v.
+
+8. Push the changes in your local repository to GitHub; $ git push origin master.
+
+- After the project has been pushed to github (you can initialize the new repository with readme license, or gitignore files).
+
+## GitHub Desktop
+
+- Pull - push request.
+
+1. On github desktop, click the button to sync changes. This button changes states based on the changes that have been made in your local repository and on the remote. If no other changes have been made, it will read publish branch.
+
+2. In your browser go to the pull request tab of the class repository.
+
+3. Click new pull request.
+
+4. Ensure the base branch, the one on the left is master and that the compare branch the one on the right is the one you created on github Desktop.
+
+5. Complete the fields of the pull request.
+
+## Push to GitHub with GitHub Desktop
+
+1. Navigate back to github Desktop.
+
+2. Select the master branch at the top of the app.
+
+3. Click the button that displays Fetch Origin to get an updated status for the remote repository.
+
+4. Then click Pull Origin to retrieve the changes to your local repository.
+
+## How to send a repo on github to github desktop
+
+### Clone a repository from GitHub to GitHub Desktop
+
+1. Sign in to GitHub and GitHub Desktop before you start to clone.
+
+2. On GitHub, navigate to the main page of the repository.
+
+3. Under your repository name, click clone or download.
+
+4. Click open in Desktop to clone the repository and open it in GitHub Desktop.
+
+5. Click choose... and using windows Explorer, navigate to a local path where you want to clone the repository.
+
+6. Click clone.
+
+## How to send a repo on GitHub to Git Bash/git
+
+### Adding an existing project to GitHub using the command line
+
+1. Create a new repository on GitHub. To avoid errors do not initialize the repository with README, license or gitignore files. You can add these files after your project has been pushed to GitHub.
+
+2. Open GitBash.
+
+3. Change the current working directory to your local project; cd Desktop or cd Mixed Analysis i.e. the name of the directory you are interested in.
+
+4. Initialize the local directory as a git repository; $ git init
+
+5. Add the files in your new local repository. This stages them for the first commit; $ git add.
+
+- To unstage a file, use "git reset HEAD YOUR-FILE".
+
+6. Commit the files that you have staged in your local repository; $ git commit -m "First commit".
+
+- To remove this commit and modify the file use; "git reset --soft HEAD~1" and commit and add the file again.
+
+7. At the top of your GitHub repository's Quick set up page, click the copy icon to copy the remote repository URL.
+
+8. In the command prompt, add the URL for the remote repository where your local repository will be pushed; $ git remote add origin remote repository URL.
+
+- Set the new remote; $ git remote -v ; This verifies the new remote URL.
+
+9. Push the changes in your local repository to github; $ git push origin master OR git push -u origin master. This pushes the changes in your local repository up to the remote repository you specified as the origin.
+
+- If you have issues, pull first and push again; $ git pull --rebase origin master and then $ git push origin master
+
+- Note that; $ git push -f origin master; pushes the repository faster and by force.
+
+## How to create a repo on Github Desktop 
+
+### Adding a repository from your local computer to GitHub Desktop
+
+- If you drag multiple git folders into GitHub desktop at the same time, each folder will be added as a separate folder.
+
+1. In file menu, click add local repository.
+
+2. Click choose... and using windows explorer, navigate to the local repository you want to add.
+
+3. Click add repository.
+
+- Send to GitHub
+
+1. On GitHub Desktop, click the button sync changes. If no changes have been made, it will read Publish Branch.
+
+2. In your browser, go to the Pull request tab of the class repository.
+
+3. Click New pull request.
+
+4. Ensure base branch is master (left) and the compare branch (right) is the one you created on github desktop.
+
+5. Complete the fields of the pull request.
+
+## Push a new or existing repository to GitHub on the command line
+
+### Create a new repository on the command line
+
+1. touch README.md
+
+2. git init
+
+3. git add README.md (repo name).
+
+4. git commit -m "First Commit"
+
+5. git remote add origin remote repository URL i.e. https://github.com/...
+
+6. git push -u origin master OR git push -f origin master OR git push origin master.
+
+### Push an existing repository from the command line
+
+- git remote add origin https://github.com/...
+
+- git push -u origin master.
+
+## Adding an existing project to github using the command line
+
+1. Create a new repository on github.
+
+2. In Terminal(command line - Git Bash) change the current working diectory to your local project i.e. $ cd Desktop then $ cd Kumi-InsectSpray folder say.
+
+3. Initialize the local directory as a git repository i.e. $ git init
+
+4. Add the files in your new local repository. This stages them for the first commit i.e. $ git add . OR git add --all
+
+5. Commit the files that you have staged in your local repository i.e. $ git commit -m "First Commit"
+
+6. In Terminal add the URL for the remote repository where your local repository will be pushed i.e. $ git remote add origin "remote repository URL" i.e. https://github.com/...
+
+7. Set the new remote repository i.e. $ remote -v
+
+8. Push the changes in your local repository to GitHub i.e. $ git push origin master OR $ git push -u origin master OR $ git push -f origin master
+
+## Creating new folders in GitHub repository via the browser
+
+1. Click on new file.
+
+2. Type in the name of the directory you want to create and the name of the subdirectories. Type a folder name followed by '/' to go down into a sub folder. Type '..' and then '/' to jump upwards one directory.
+
+3. Use the back space key to edit the parent directory name.
+
+## Merge several repositories into one repository on github
+
+### Merge two Git Repositories into one Repository
+
+1. Create a new empty repository New.
+
+2. Make an initial commit because we need one before we do merge.
+
+3. Add a remote to old repository Old A.
+
+4. Merge old A /Master to New / Master.
+
+5. Make a subdirectory old A.
+
+6. Move all files into subdirectory old A.
+
+7. commit all of the file moved.
+
+8. Repeat 3 - 6 for old B.
+
+- Assume the current directory is where we want the new repository to be created.
+
+- Create the new repository; $ git init
+
+- Before we do a merge, we have to have an initial commit so we will make a dummy commit: dir > deleteme.txt; $ git add . then $ git commit -m "Initial commit"
+
+- Add a remote for and fetch the old repository; $ git remote add -f old_a < Old A repo URL >
+
+- Merge the files from old_a/master into new/master
+
+- Clean up our dummy file because we don't need it any more; $ git rm .\deleteme.txt then $ git commit -m "clean up initial file"
+
+- Move the old_a repo files and folders into a subdirectory so they don't collide with the other repo coming later; mkdir old_a then dir -exclude old_a|%{git mv $-.Name old_a}
+
+## How to Clone a repo from github to git
+
+1. On github navigate to the main page of the repository.
+
+2. Under the repository name click clone or download.
+
+3. In the clone with HTTPS section , click the copy icon to copy the clone URL for the repository.
+
+4. Open git Bash.
+
+5. Change the current working directory to the location where you want the cloned directory to be made.
+
+6. Type git clone and then paste the url you copied; $ git clone https://...
+
+7. Press enter. Your local clone will be created.
+
+## Clone a repository to GitHub Desktop
+
+1. On github, navigate to the main page of the repository.
+
+2. Under your repository name, click to clone your repository in Desktop. Follow the prompts in GitHub desktop to complete the clone.
+
+## How to attach files to a repository on github
+
+1. Go to github.
+
+2. Open the particular repository you want to attach the files.
+
+3. click on create new file.
+
+4. kumi-run_analysis/New file.
+
+5. Put the file name in the box provided.
+
+6. Right beneath, there is a preview page where you can edit your file, copy and paste the content of the file from other sources here.
+
+7. At the very bottom of the page you have;
+
+- a box which you will leave blank.
+
+- the next box type Added new file.
+
+- You will see commit directly to the master.
+
+- Just click on Create new file and you are done. If you do not want to continue click cancel.
+
+## Continuation of merging two repositories
+
+- Commit the move; $ git commit -m "Move old_a files into sub_dir"
+
+- Do something for old_b; $ git remote add -f old_b < old B repo url > then $ git merge old_b/master
+
+- mkdir old_b
+
+- dir  -exclude old_a, old_b | %{git mv $-.Name old_b}
+
+- $ git commit -m "Move old_b files into subdir"
+
+- Bring over a feature branch from one of the old repos; $ git checkout -b feature-in-progress
+
+- $ git merge -s recursive  -X subtree=old_a old_a/feature-in-progress
+
+## How to attach a file to a repository in Git
+
+1. On github, navigate to the main page of the repository.
+
+2. Under your repository name, click upload files.
+
+3. Drag and drop the file or folder you would like to upload to your repository onto the file tree.
+
+4. At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
+
+5. Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is master, you should choose to create a new branch for your commit and then create a pull request.
+
+6. Click commit changes.
+
+## Adding a file to a repository using the command line
+
+- You can upload an existing file to a GitHub repository using the command line.
+
+- This process assumes you have already;
+
+1. Created a repository on GitHub or have an existing repository owned by someone else you would like to contribute to.
+
+2. Clone the repository locally on your computer.
+
+- On your computer, move the file you would like to upload to GitHub into the local directory that was created when you cloned the repository.
+
+- Open Git Bash.
+
+- Change the current working directory to your local repository.
+
+- Stage the file for commit to your local repository; $ git add.
+
+- Commit the file that you have staged in your local repository; $ git commit -m "Add existing file"
+
+- Push the changes in your local repository to GitHub; $ git push origin your-branch.
+
+- This pushes the changes in your local repository up to the remote repository you specified as the origin.
+
+
+
+
+
+
+
